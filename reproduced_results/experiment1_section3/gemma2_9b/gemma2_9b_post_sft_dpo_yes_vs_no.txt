@@ -1,0 +1,254 @@
+Filtered out 0 experiments in which the training loss increased at some time step
+========================================================================================================
+Experiment info outputs/persona/unintentional-unalignment_outputs_persona/gemma9b_post_sft_dpo_yes_vs_no:
+--------------------------------------------------------------------------------------------------------
+Model: google/gemma-2-9b
+Model checkpoint: outputs/persona_models/gemma9b_sft_persona_cross_entropy_2025_12_24-17_59_46/model_epoch_0
+Dataset: data_files/persona/ends-justify-means.jsonl
+Preferred output token: 'Yes'
+Dispreferred output token: 'No'
+========================================================================================================
+
+========================================================================================================
+Preferred output probability decrease results:
+--------------------------------------------------------------------------------------------------------
+First step preferred output probability decreased: Min: 4 , Max: 98 , Median: 61 , Mean: 53.0
+--------------------------------------------------------------------------------------------------------
+Number of examples in which preferred output probability decreased: 5 / 10
+--------------------------------------------------------------------------------------------------------
+Number of examples in which preferred output probability decreased and train loss decreased: 5 / 10
+--------------------------------------------------------------------------------------------------------
+Number of examples in which train loss INCREASED: 0 / 10
+========================================================================================================
+
+========================================================================================================
+Max preferred output probability and log probability decrease results:
+--------------------------------------------------------------------------------------------------------
+Mean largest preferred output log probability decrease (step refers to value before that step): -0.002371418522670865 (-1.5109275579452515 -> -1.513298749923706)
+Mean start step: 26.5 , Mean end step: 49.900001525878906
+--------------------------------------------------------------------------------------------------------
+Mean largest preferred output probability decrease (step refers to value before that step): -0.0005218401784077287 (0.2207200527191162 -> 0.22019819915294647)
+Mean start step: 26.5 , Mean end step: 49.900001525878906
+========================================================================================================
+
+========================================================================================================
+Per example max preferred output probability and log probability decrease results
+========================================================================================================
+Example 0
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (-1.5399235486984253 -> -1.5399235486984253)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (0.21439749002456665 -> 0.21439749002456665)
+========================================================================================================
+Example 1
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 4 to 100: -0.010806560516357422 (-1.5117228031158447 -> -1.5225293636322021)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 4 to 100: -0.0023703277111053467 (0.2205297201871872 -> 0.21815939247608185)
+========================================================================================================
+Example 2
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (-1.509055495262146 -> -1.509055495262146)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (0.2211187332868576 -> 0.2211187332868576)
+========================================================================================================
+Example 3
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 82 to 100: -0.00026929378509521484 (-1.5056928396224976 -> -1.5059621334075928)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 82 to 100: -5.9738755226135254e-05 (0.2218635231256485 -> 0.22180378437042236)
+========================================================================================================
+Example 4
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (-1.5135139226913452 -> -1.5135139226913452)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (0.22013507783412933 -> 0.22013507783412933)
+========================================================================================================
+Example 5
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (-1.5058186054229736 -> -1.5058186054229736)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (0.22183562815189362 -> 0.22183562815189362)
+========================================================================================================
+Example 6
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 98 to 99: -8.702278137207031e-06 (-1.4914435148239136 -> -1.4914522171020508)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 98 to 99: -1.952052116394043e-06 (0.22504755854606628 -> 0.2250456064939499)
+========================================================================================================
+Example 7
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 20 to 100: -0.005375862121582031 (-1.5136542320251465 -> -1.5190300941467285)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 20 to 100: -0.0011800825595855713 (0.22010420262813568 -> 0.2189241200685501)
+========================================================================================================
+Example 8
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (-1.51448655128479 -> -1.51448655128479)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 0 to 0: 0.0 (0.2199210822582245 -> 0.2199210822582245)
+========================================================================================================
+Example 9
+--------------------------------------------------------------------------------------------------------
+Largest preferred output log probability decrease (step refers to value before that step):
+Step 61 to 100: -0.007253766059875488 (-1.5039637088775635 -> -1.511217474937439)
+--------------------------------------------------------------------------------------------------------
+Largest preferred output probability decrease (step refers to value before that step):
+Step 61 to 100: -0.0016063004732131958 (0.22224749624729156 -> 0.22064119577407837)
+========================================================================================================
+
+
+========================================================================================================
+Tokens increasing most overall in probability:
+--------------------------------------------------------------------------------------------------------
+Overall Top-1 probability increase token counts at time step 1:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0002827927528414875
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-2 probability increase token counts at time step 1:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0002827927528414875
+Yes (dec: 'Yes'): count: 7 , frequency: 0.700 , mean increase: 0.00019722538127098233
+Sure (dec: 'Sure'): count: 3 , frequency: 0.300 , mean increase: 9.504457557341084e-05
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-3 probability increase token counts at time step 1:
+--------------------------------------------------------------------------------------------------------
+Yes (dec: 'Yes'): count: 10 , frequency: 1.000 , mean increase: 0.00015811622142791748
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0002827927528414875
+Sure (dec: 'Sure'): count: 9 , frequency: 0.900 , mean increase: 8.949968469096348e-05
+Absolutely (dec: 'Absolutely'): count: 1 , frequency: 0.100 , mean increase: 0.0005495697259902954
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-1 probability increase token counts at time step 5:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0008076369995251298
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-2 probability increase token counts at time step 5:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0008076369995251298
+Yes (dec: 'Yes'): count: 8 , frequency: 0.800 , mean increase: 0.0005321148782968521
+Sure (dec: 'Sure'): count: 2 , frequency: 0.200 , mean increase: 0.00027620047330856323
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-3 probability increase token counts at time step 5:
+--------------------------------------------------------------------------------------------------------
+Yes (dec: 'Yes'): count: 10 , frequency: 1.000 , mean increase: 0.00044898688793182373
+Sure (dec: 'Sure'): count: 10 , frequency: 1.000 , mean increase: 0.0003049924853257835
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0008076369995251298
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-1 probability increase token counts at time step 10:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0012281506787985563
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-2 probability increase token counts at time step 10:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0012281506787985563
+Yes (dec: 'Yes'): count: 8 , frequency: 0.800 , mean increase: 0.000807465985417366
+Sure (dec: 'Sure'): count: 2 , frequency: 0.200 , mean increase: 0.0004185885190963745
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-3 probability increase token counts at time step 10:
+--------------------------------------------------------------------------------------------------------
+Sure (dec: 'Sure'): count: 10 , frequency: 1.000 , mean increase: 0.0004250839410815388
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.0012281506787985563
+Yes (dec: 'Yes'): count: 9 , frequency: 0.900 , mean increase: 0.0007431308622471988
+Absolutely (dec: 'Absolutely'): count: 1 , frequency: 0.100 , mean increase: 4.0471553802490234e-05
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-1 probability increase token counts at time step 25:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.002253228332847357
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-2 probability increase token counts at time step 25:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.002253228332847357
+Yes (dec: 'Yes'): count: 7 , frequency: 0.700 , mean increase: 0.0015004532178863883
+Sure (dec: 'Sure'): count: 3 , frequency: 0.300 , mean increase: 0.0009112656116485596
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-3 probability increase token counts at time step 25:
+--------------------------------------------------------------------------------------------------------
+Sure (dec: 'Sure'): count: 10 , frequency: 1.000 , mean increase: 0.0006749585154466331
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.002253228332847357
+Yes (dec: 'Yes'): count: 9 , frequency: 0.900 , mean increase: 0.0012822747230529785
+▁Sure (dec: ' Sure'): count: 1 , frequency: 0.100 , mean increase: 3.539546742103994e-05
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-1 probability increase token counts at time step 50:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 9 , frequency: 0.900 , mean increase: 0.004045743029564619
+Yes (dec: 'Yes'): count: 1 , frequency: 0.100 , mean increase: 0.002635583281517029
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-2 probability increase token counts at time step 50:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.003886194434016943
+Yes (dec: 'Yes'): count: 8 , frequency: 0.800 , mean increase: 0.002177879214286804
+Sure (dec: 'Sure'): count: 2 , frequency: 0.200 , mean increase: 0.0028637275099754333
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-3 probability increase token counts at time step 50:
+--------------------------------------------------------------------------------------------------------
+Sure (dec: 'Sure'): count: 10 , frequency: 1.000 , mean increase: 0.0011338427430018783
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.003886194434016943
+Yes (dec: 'Yes'): count: 9 , frequency: 0.900 , mean increase: 0.0019460751209408045
+▁Sure (dec: ' Sure'): count: 1 , frequency: 0.100 , mean increase: 0.00015642527432646602
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-1 probability increase token counts at time step 100:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 9 , frequency: 0.900 , mean increase: 0.008033405058085918
+Yes (dec: 'Yes'): count: 1 , frequency: 0.100 , mean increase: 0.004989907145500183
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-2 probability increase token counts at time step 100:
+--------------------------------------------------------------------------------------------------------
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.007625495083630085
+Yes (dec: 'Yes'): count: 6 , frequency: 0.600 , mean increase: 0.004185160156339407
+Sure (dec: 'Sure'): count: 4 , frequency: 0.400 , mean increase: 0.0035372525453567505
+
+--------------------------------------------------------------------------------------------------------
+Overall Top-3 probability increase token counts at time step 100:
+--------------------------------------------------------------------------------------------------------
+Sure (dec: 'Sure'): count: 10 , frequency: 1.000 , mean increase: 0.0021253391169011593
+Certainly (dec: 'Certainly'): count: 10 , frequency: 1.000 , mean increase: 0.007625495083630085
+Yes (dec: 'Yes'): count: 8 , frequency: 0.800 , mean increase: 0.0032795965671539307
+▁Sure (dec: ' Sure'): count: 2 , frequency: 0.200 , mean increase: 0.0002692231209948659
+
+========================================================================================================
+
+========================================================================================================
+Token unembeddings and hidden representation metrics:
+--------------------------------------------------------------------------------------------------------
+Preferred token norm: Initial: 1.5544930696487427 , Final (mean): 1.5544930696487427
+Dispreferred token norm: Initial: 1.4585529565811157 , Final (mean): 1.4585530757904053
+Preferred and dispreferred inner product: Initial 0.8529097437858582 , Final (mean): 0.8529096841812134
+Dispreferred projection norm: Initial: 0.5486738681793213 , Final (mean): 0.5486738085746765
+Preferred norm dispreferred projection norm diff: Initial: 1.0058192014694214 , Final (mean): 1.0058192014694214
+Norm orthogonal component of dispreferred tokens: Initial: 1.3514190912246704 , Final (mean): 1.35141921043396
+Hidden representation norm mean: Initial: 229.1192169189453 , Final: 227.542724609375
+Hidden representation change norm mean: 50.61594009399414
