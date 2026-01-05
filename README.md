@@ -18,8 +18,8 @@ The project validates how Direct Preference Optimization (DPO) can unintentional
 Successfully replicated the three major findings of the original paper:
 
 1.  **Catastrophic Likelihood Displacement (Section 3):**
-    * Confirmed that when optimizing for specific preferences (e.g., "No" > "Never"), the probability of the preferred token ("No") often decreases.
-    * Verified that probability mass shifts to opposite tokens (e.g., "Yes"), leading to "catastrophic" displacement.
+    * Confirmed that when optimizing for specific preferences ("No" > "Never"), the probability of the preferred token ("No") often decreases.
+    * Verified that probability mass shifts to opposite tokens (Yes"), leading to "catastrophic" displacement.
     * **Models:** OLMo-1B and Gemma-2-9B (reproduced with T4 and H100 GPUs).
 
 2.  **Identifying Sources with CHES (Section 5):**
@@ -27,7 +27,7 @@ Successfully replicated the three major findings of the original paper:
     * Plots confirmed that high-CHES samples contribute most significantly to the probability drops.
 
 3.  **Safety Alignment Efficacy (Section 6):**
-    * Reproduced the drop in refusal rates on safety benchmarks (e.g., "SorryBench") after DPO training.
+    * Reproduced the drop in refusal rates on safety benchmarks (SORRYBench) after DPO training.
     * Confirmed that filtering training data based on CHES scores helps maintain higher refusal rates compared to standard DPO.
 
 *(The `End Eval Report.pdf` in this repository contains the detailed quantitative breakdown.)*
@@ -43,7 +43,8 @@ Performed similar studies on Gemma-2b-it model with the SORRYBench dataset to an
 ### Ablation 2: Soft-Filtering
 Instead of hard-removing samples (as done in the original paper), I have investigated "soft-filtering" by downweighting samples based on their length normalised CHES score. This allows the model to still learn from the data without suffering catastrophic displacement.
 
-### Ablation 3: Flipped Model (The "Reverse" Experiment)
+### Ablation 3: Flipped Model
 Investigated the effects of inverting preference pairs to observe if probability shifts occur in the counter-intuitive opposite direction.
 
 * **Download Link:** [Google Drive - Ablation 3 Flipped Model](https://drive.google.com/drive/folders/1mc4mFcIbDMucHRPACTMFhyzmRCn6UGNh?usp=sharing)
+
